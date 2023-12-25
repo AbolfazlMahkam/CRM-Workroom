@@ -74,26 +74,38 @@
         </div><!-- End LogOut -->
       </aside><!-- End Sidebar -->
       <main class="col-span-6 px-6"><!-- Start Container -->
-        <div class="grid-cols-2">
+        <div class="grid-cols-2"><!-- Start Header -->
           <div class="col-span-1 grid grid-cols-2">
             <div class="col-span-1"><!-- SearchBox -->
               <div class="flex bg-white rounded-xl p-3 items-center w-8/12">
-                <label class="ml-1" for="search"><img class="w-4" src="assets/img/search.svg"></label>
+                <label class="ml-1" for="search"><img class="w-4 cursor-pointer" src="assets/img/search.svg"></label>
                 <input type="search" class="ml-2 font-semibold text-sm" name="search" placeholder="Search">
               </div>
-              <div>
-                <span>Welcome back, Evan!</span>
-                <h1>Dashbord</h1>
+              <div class="mt-10">
+                <span class="text-sm text-gray-400 font-semibold">Welcome back, Evan!</span>
+                <h1 class="font-semibold text-4xl mt-2">Dashbord</h1>
               </div>
             </div>
             <div class="col-span-1">
-              
+              <div class="flex justify-end mb-3">
+                <div class="rounded-xl bg-white w-10 h-10 py-2.5 mr-4 cursor-pointer hover:bg-gray-50 transition-all duration-300">
+                  <img class="mx-auto w-5" src="assets/img/notifications.svg" alt="Notification">
+                </div>
+                <div class="flex bg-white rounded-xl h-10 items-center px-2 cursor-pointer hover:bg-gray-50 transition-all duration-300">
+                  <img class="w-8 h-8 mr-2" src="assets/img/evan.png">
+                  <span class="font-semibold">Evan Yates</span>
+                  <img class="w-2.5 ml-3 mt-0.5" src="assets/img/arrow-d.svg">
+                </div>
+              </div>
+              <div dir="rtl">
+                <div class="bg-slate-200 rounded-xl p-2 px-3 flex w-fit mt-16">
+                  <span>Nov 16, 2020 - Dec 16, 2020</span>
+                  <img class="mr-2" src="assets/img/calendar.svg">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-span-1">
-
-          </div>
-        </div>
+        </div><!-- End Header -->
         <div>
           <div></div>
           <div></div>
