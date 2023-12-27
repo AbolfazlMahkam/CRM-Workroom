@@ -7,11 +7,11 @@
     <title>CRM Workroom</title>
   </head>
   <body>
-    <div class="p-4 grid grid-cols-7 bg-slate-100 min-h-lvh">
-      <aside class="col-span-1 bg-white rounded-3xl py-9"><!-- Start Sidebar -->
+    <div class="p-4 grid grid-cols-7 max-[1100px]:grid-cols-1 bg-slate-100 min-h-lvh">
+      <div id="menu" class="col-span-1 bg-white rounded-3xl py-9 relative max-[1100px]:mb-10 max-[1100px]:hidden"><!-- Start Sidebar -->
         <img class=" ml-6 mb-8" src="assets/img/Company's logo.svg" alt="Logo">
         <div class="px-4 relative"><!-- Start Menu -->
-          <div class="btn-nav bg-blue-50 hover:bg-blue-100">
+          <div class="btn-nav bg-slate-100 hover:bg-slate-200">
             <img src="assets/img/dashboard.svg">
             <span class="text-sm ml-3 font-semibold text-blue-400">Dashboard</span>
           </div>
@@ -53,31 +53,33 @@
             <span class="text-sm ml-3 font-semibold text-gray-400">Info Portal</span>
           </div>
         </div><!-- End Menu -->
-        <div class="px-4 justify-center relative pt-11 items-end"><!-- Start Support -->
-          <div>
-            <img class="ml-2 absolute" src="assets/img/illustration.svg">
-          </div>
-          <div class="justify-center mt-12 bg-blue-50 rounded-xl h-40 pt-24">
-            <div class=" justify-center rounded-md h-5">
-              <a class="flex bg-blue-500 rounded-xl py-2 px-3 w-28 bottom-0 justify-center mx-auto shadow-md shadow-blue-700 hover:drop-shadow-lg transition duration-300" href="#">
-                <img src="assets/img/support.svg">
-                <span class="text-white ml-2">Support</span>
-              </a>
+        <div class="absolute bottom-0 mb-20 w-full max-[1100px]:relative max-[1100px]:w-48"><!-- Start Support -->
+          <div class="px-4 justify-center relative pt-11 items-end h-fit">
+            <div>
+              <img class="ml-2 absolute" src="assets/img/illustration.svg">
+            </div>
+            <div class="justify-center mt-12 bg-slate-100 rounded-xl h-40 pt-24 min-w-full">
+              <div class=" justify-center rounded-md h-5">
+                <a class="flex bg-blue-500 rounded-xl py-2 px-3 w-28 bottom-0 justify-center mx-auto shadow-md shadow-blue-700 hover:drop-shadow-lg transition duration-300" href="#">
+                  <img src="assets/img/support.svg">
+                  <span class="text-white ml-2">Support</span>
+                </a>
+              </div>
             </div>
           </div>
         </div><!-- End Support -->
-        <div class="px-4 relative mt-10"><!-- End LogOut -->
+        <div class="px-4 h-fit items-end absolute bottom-0 mb-4 w-full max-[1100px]:relative"><!-- Start LogOut -->
           <div class="btn-nav hover:bg-gray-200">
             <img src="assets/img/logout.svg">
             <span class="text-sm ml-3 font-semibold text-gray-400">Log Out</span>
           </div>
         </div><!-- End LogOut -->
-      </aside><!-- End Sidebar -->
+      </div><!-- End Sidebar -->
       <main class="col-span-6 px-6"><!-- Start Container -->
         <div class="grid-cols-2"><!-- Start Header -->
           <div class="col-span-1 grid grid-cols-2">
             <div class="col-span-1"><!-- SearchBox -->
-              <div class="flex bg-white rounded-xl p-3 items-center w-8/12">
+              <div class="flex bg-white rounded-xl p-3 items-center w-8/12 max-[800px]:w-fit">
                 <label class="ml-1" for="search"><img class="w-4 cursor-pointer" src="assets/img/search.svg"></label>
                 <input type="search" class="ml-2 font-semibold text-sm" name="search" placeholder="Search">
               </div>
@@ -88,13 +90,16 @@
             </div>
             <div class="col-span-1">
               <div class="flex justify-end mb-3">
-                <div class="rounded-xl bg-white w-10 h-10 py-2.5 mr-4 cursor-pointer hover:bg-gray-50 transition-all duration-300">
+                <div class="rounded-xl bg-white w-10 h-10 py-2.5 mr-4 cursor-pointer hover:bg-slate-200 transition-all duration-300">
                   <img class="mx-auto w-5" src="assets/img/notifications.svg" alt="Notification">
                 </div>
-                <div class="flex bg-white rounded-xl h-10 items-center px-2 cursor-pointer hover:bg-gray-50 transition-all duration-300">
+                <div class="flex bg-white rounded-xl h-10 items-center px-2 cursor-pointer hover:bg-slate-200 transition-all duration-300">
                   <img class="w-8 h-8 mr-2" src="assets/img/evan.png">
                   <span class="font-semibold">Evan Yates</span>
                   <img class="w-2.5 ml-3 mt-0.5" src="assets/img/arrow-d.svg">
+                </div>
+                <div id="burger" class="bg-white rounded-xl ml-2 px-2 py-1.5 hover:bg-slate-200 cursor-pointer transition hidden max-[1100px]:inline-block">
+                  <span class="font-semibold text-sm">MENU</span>
                 </div>
               </div>
               <div dir="rtl" class="pt-2">
@@ -106,7 +111,7 @@
             </div>
           </div>
         </div><!-- End Header -->
-        <div class="grid grid-cols-3 pt-7">
+        <div class="grid grid-cols-3 pt-7 max-[1100px]:grid-cols-1">
           <div class="col-span-2">
             <div class="bg-white rounded-3xl p-4 relative">
               <div class="flex mt-2">
@@ -120,120 +125,370 @@
                   </div>
                 </div>
               </div>
-              <div class="grid grid-cols-4 gap-4 mt-4">
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
+              <div class="grid grid-cols-4 gap-4 mt-4 max-[1180px]:grid-cols-3 max-[1100px]:grid-cols-4 max-[700px]:grid-cols-3 max-[560px]:grid-cols-2 max-[410px]:grid-cols-1">
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
+                    <img class="" src="assets/img/ring1.svg">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
+                  </div>
                   <div class="m-auto">
-                    <img class="m-auto" src="assets/img/ring1.svg">
-                    <img class="top-0 mt-1.5 mx-auto w-12" src="assets/img/wl-ph1.png">
+                    <span class="text-sm font-semibold m-auto block w-fit">Shawn Stone</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">UI/UX Designer</span>
+                  </div>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">Middle</span>
+                  </div>
+                </div>
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
+                    <img class="" src="assets/img/ring1.svg">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph2.png">
                   </div>
                   <div class="m-auto">
-                    <span class="text-sm font-semibold m-auto block">Shawn Stone</span>
-                    <span class="text-gray-600 text-sm m-auto block">UI/UX Designer</span>
+                    <span class="text-sm font-semibold m-auto block w-fit">Randy Delgado</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">UI/UX Designer</span>
                   </div>
-                  <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
-                  </div>
-                </div>
-
-
-                
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
-                  <div class="relative m-auto">
-                    <img class="" src="assets/img/ring1.svg">
-                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
-                  </div>
-                  <div >
-                    <p class="text-sm font-semibold">Shawn Stone</p>
-                    <p class="text-gray-600 text-sm">UI/UX Designer</p>
-                  </div>
-                  <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">Junior</span>
                   </div>
                 </div>
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
-                  <div class="relative m-auto">
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
                     <img class="" src="assets/img/ring1.svg">
-                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph3.png">
                   </div>
-                  <div >
-                    <p class="text-sm font-semibold">Shawn Stone</p>
-                    <p class="text-gray-600 text-sm">UI/UX Designer</p>
+                  <div class="m-auto">
+                    <span class="text-sm font-semibold m-auto block w-fit">Emili Tyler</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">Copywriter</span>
                   </div>
-                  <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">Middle</span>
                   </div>
                 </div>
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
-                  <div class="relative m-auto">
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
                     <img class="" src="assets/img/ring1.svg">
-                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph4.png">
                   </div>
-                  <div >
-                    <p class="text-sm font-semibold">Shawn Stone</p>
-                    <p class="text-gray-600 text-sm">UI/UX Designer</p>
+                  <div class="m-auto">
+                    <span class="text-sm font-semibold m-auto block w-fit">Louis Castro</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">Copywriter</span>
                   </div>
-                  <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">Senior</span>
                   </div>
                 </div>
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
-                  <div class="relative m-auto">
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
                     <img class="" src="assets/img/ring1.svg">
-                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph5.png">
                   </div>
-                  <div >
-                    <p class="text-sm font-semibold">Shawn Stone</p>
-                    <p class="text-gray-600 text-sm">UI/UX Designer</p>
+                  <div class="m-auto">
+                    <span class="text-sm font-semibold m-auto block w-fit">Blake Silva</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">IOS Developer</span>
                   </div>
-                  <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">MSenior</span>
                   </div>
                 </div>
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
-                  <div class="relative m-auto">
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
                     <img class="" src="assets/img/ring1.svg">
-                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph6.png">
                   </div>
-                  <div >
-                    <p class="text-sm font-semibold">Shawn Stone</p>
-                    <p class="text-gray-600 text-sm">UI/UX Designer</p>
+                  <div class="m-auto">
+                    <span class="text-sm font-semibold m-auto block w-fit">Joel Philips</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">UI/UX Designer</span>
                   </div>
-                  <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">Middle</span>
                   </div>
                 </div>
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
-                  <div class="relative m-auto">
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
                     <img class="" src="assets/img/ring1.svg">
-                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph7.png">
                   </div>
-                  <div >
-                    <p class="text-sm font-semibold">Shawn Stone</p>
-                    <p class="text-gray-600 text-sm">UI/UX Designer</p>
+                  <div class="m-auto">
+                    <span class="text-sm font-semibold m-auto block w-fit">Wayne Marsh</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">Copywriter</span>
                   </div>
-                  <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">Junior</span>
                   </div>
                 </div>
-                <div class="bg-blue-50 rounded-3xl justify-center p-4">
-                  <div class="relative m-auto">
+                <div class="bg-slate-100 rounded-3xl justify-center p-4">
+                  <div class="m-auto w-fit relative">
                     <img class="" src="assets/img/ring1.svg">
-                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph1.png">
+                    <img class="absolute top-0 mt-1.5 ml-1.5 w-12" src="assets/img/wl-ph8.png">
                   </div>
-                  <div >
-                    <p class="text-sm font-semibold">Shawn Stone</p>
-                    <p class="text-gray-600 text-sm">UI/UX Designer</p>
+                  <div class="m-auto">
+                    <span class="text-sm font-semibold m-auto block w-fit">Oscar HolloWay</span>
+                    <span class="text-gray-600 text-sm m-auto block w-fit">UI/UX Designer</span>
                   </div>
+                  <div class="m-auto cursor-pointer">
+                    <span class="w-fit m-auto px-0.5 block text-sm text-gray-500 rounded-md border-gray-500 border-x border-y mt-1 hover:bg-gray-500 hover:text-white transition">Middle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-10">
+              <div class="flex mt-2 mb-4">
+                <div class="justify-start ml-2">
+                  <span class="font-semibold text-lg">Project</span>
+                </div>
+                <div class=" justify-end cursor-pointer absolute top-0 right-0 mt-2 mr-5">
+                  <div class="flex">
+                    <a href="#" class="text-blue-400 text-sm font-semibold">View all</a>
+                    <img class="ml-1" src="assets/img/arrow-b2.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-3xl grid grid-cols-2 max-[670px]:grid-cols-1 mb-4">
+                <div class="border-gray-200 border-r max-[670px]:border-b max-[670px]:border-r-0 p-5">
+                  <div class="flex">
+                    <img src="assets/img/pj1.svg">
+                    <div class="ml-4">
+                      <span class="text-gray-400 text-sm">PN0001265</span>
+                      <h1 class="font-semibold">Medical App (IOS native)</h1>
+                    </div>
+                  </div>
+                  <div class="flex mt-4 relative">
+                    <div class="flex">
+                      <img class="w-4 mr-2" src="assets/img/calendar.svg">
+                      <span class="text-gray-500 text-sm">Created Sep 12,2020</span>
+                    </div>
+                    <div dir="rtl" class="absolute right-0 top-0 m-">
+                      <div class="flex w-fit justify-end" dir="ltr">
+                        <img class="w-2.5" src="assets/img/arrow-y.svg">
+                        <span class="text-yellow-500 text-sm ml-2">Medium</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5 px-7">
                   <div>
-                    <span class="text-sm text-gray-500 rounded-lg border-gray-500 border-1">Midle</span>
+                    <h1 class="font-semibold mb-3">Project Data</h1>
+                  </div>
+                  <div class="grid grid-cols-3">
+                    <div class="">
+                      <span class="text-sm text-gray-400">All tasks</span>
+                      <h1 class="font-semibold">34</h1>
+                    </div>
+                    <div>
+                      <span class="text-sm text-gray-400">Active tasks</span>
+                      <h1 class="font-semibold">13</h1>
+                    </div>
+                    <div>
+                      <span class="text-sm text-gray-400">Assignees</span>
+                      <div class="relative">
+                        <img class="w-5 absolute border-white border rounded-full" src="assets/img/wl-ph5.png">
+                        <img class="w-5 absolute ml-4 border-white border rounded-full" src="assets/img/wl-ph2.png">
+                        <img class="w-5 absolute ml-8 border-white border rounded-full" src="assets/img/wl-ph8.png">
+                        <div class="bg-blue-400 p-0.5 rounded-full w-5 h-5 text-white text-xs absolute ml-12">+2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-3xl grid grid-cols-2 max-[670px]:grid-cols-1 mb-4">
+                <div class="border-gray-200 border-r max-[670px]:border-b max-[670px]:border-r-0 p-5">
+                  <div class="flex">
+                    <img src="assets/img/pj2.svg">
+                    <div class="ml-4">
+                      <span class="text-gray-400 text-sm">PN0001221</span>
+                      <h1 class="font-semibold">Food Delivery Service</h1>
+                    </div>
+                  </div>
+                  <div class="flex mt-4 relative">
+                    <div class="flex">
+                      <img class="w-4 mr-2" src="assets/img/calendar.svg">
+                      <span class="text-gray-500 text-sm">Created Sep 10,2020</span>
+                    </div>
+                    <div dir="rtl" class="absolute right-0 top-0 m-">
+                      <div class="flex w-fit justify-end" dir="ltr">
+                        <img class="w-2.5" src="assets/img/arrow-y.svg">
+                        <span class="text-yellow-500 text-sm ml-2">Medium</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5 px-7">
+                  <div>
+                    <h1 class="font-semibold mb-3">Project Data</h1>
+                  </div>
+                  <div class="grid grid-cols-3">
+                    <div class="">
+                      <span class="text-sm text-gray-400">All tasks</span>
+                      <h1 class="font-semibold">50</h1>
+                    </div>
+                    <div>
+                      <span class="text-sm text-gray-400">Active tasks</span>
+                      <h1 class="font-semibold">24</h1>
+                    </div>
+                    <div>
+                      <span class="text-sm text-gray-400">Assignees</span>
+                      <div class="relative">
+                        <img class="w-5 absolute border-white border rounded-full" src="assets/img/wl-ph5.png">
+                        <img class="w-5 absolute ml-4 border-white border rounded-full" src="assets/img/wl-ph3.png">
+                        <img class="w-5 absolute ml-8 border-white border rounded-full" src="assets/img/wl-ph2.png">
+                        <div class="bg-blue-400 p-0.5 rounded-full w-5 h-5 text-white text-xs absolute ml-12">+2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-3xl grid grid-cols-2 max-[670px]:grid-cols-1 max-[1100px]:mb-5">
+                <div class="border-gray-200 border-r max-[670px]:border-b max-[670px]:border-r-0 p-5">
+                  <div class="flex">
+                    <img src="assets/img/pj3.svg">
+                    <div class="ml-4">
+                      <span class="text-gray-400 text-sm">PN0001290</span>
+                      <h1 class="font-semibold">Food Delivery Service</h1>
+                    </div>
+                  </div>
+                  <div class="flex mt-4 relative">
+                    <div class="flex">
+                      <img class="w-4 mr-2" src="assets/img/calendar.svg">
+                      <span class="text-gray-500 text-sm">Created May 28,2020</span>
+                    </div>
+                    <div dir="rtl" class="absolute right-0 top-0 m-">
+                      <div class="flex w-fit justify-end" dir="ltr">
+                        <img class="w-2.5" src="assets/img/arrow-g.svg">
+                        <span class="text-green-500 text-sm ml-2">Low</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5 px-7">
+                  <div>
+                    <h1 class="font-semibold mb-3">Project Data</h1>
+                  </div>
+                  <div class="grid grid-cols-3">
+                    <div class="">
+                      <span class="text-sm text-gray-400">All tasks</span>
+                      <h1 class="font-semibold">23</h1>
+                    </div>
+                    <div>
+                      <span class="text-sm text-gray-400">Active tasks</span>
+                      <h1 class="font-semibold">20</h1>
+                    </div>
+                    <div>
+                      <span class="text-sm text-gray-400">Assignees</span>
+                      <div class="relative">
+                        <img class="w-5 absolute border-white border rounded-full" src="assets/img/wl-ph5.png">
+                        <img class="w-5 absolute ml-4 border-white border rounded-full" src="assets/img/wl-ph2.png">
+                        <img class="w-5 absolute ml-8 border-white border rounded-full" src="assets/img/wl-ph6.png">
+                        <div class="bg-blue-400 p-0.5 rounded-full w-5 h-5 text-white text-xs absolute ml-12">+2</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-span-1"></div>
+          <div class="col-span-1 pl-5 max-[1100px]:pl-0">
+            <div class="bg-white rounded-3xl p-4">
+              <div class="relative">
+                <div class="flex">
+                  <div class="justify-start">
+                    <span class="font-semibold text-lg">Nearest Event</span>
+                  </div>
+                  <div class=" justify-end cursor-pointer absolute top-0 right-0 mt-1.5 mr-3">
+                    <div class="flex">
+                      <a href="#" class="text-blue-400 text-sm font-semibold">View all</a>
+                      <img class="ml-1" src="assets/img/arrow-b2.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-blue-400 border-l-4 rounded-sm px-3 pt-1 pb-3 mt-4">
+                <div class="grid grid-cols-3 relative">
+                  <h1 class="font-semibold col-span-2">Presentation of the new department</h1>
+                  <img class="col-span-1 mt-1 absolute right-0 mr-2.5" src="assets/img/arrow-y.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Today | 5:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="assets/img/clock.svg">
+                    <span class="ml-2 text-sm text-gray-600 font-semibold">4h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="border-pink-300 border-l-4 rounded-sm px-3 pt-1 pb-3 mt-4">
+                <div class="grid grid-cols-3 relative">
+                  <h1 class="font-semibold col-span-2">Anna's Birthday</h1>
+                  <img class="col-span-1 mt-1 absolute right-0 mr-2.5" src="assets/img/arrow-g.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Today | 6:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="assets/img/clock.svg">
+                    <span class="ml-2 text-sm text-gray-600 font-semibold">4h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="border-pink-300 border-l-4 rounded-sm px-3 pt-1 pb-3 mt-4">
+                <div class="grid grid-cols-3 relative">
+                  <h1 class="font-semibold col-span-2">Ray's Birthday</h1>
+                  <img class="col-span-1 mt-1 absolute right-0 mr-2.5" src="assets/img/arrow-g.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Tomorrow | 2:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="assets/img/clock.svg">
+                    <span class="ml-2 text-sm text-gray-600 font-semibold">4h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-10">
+              <div class="bg-white rounded-3xl p-5">
+                <h1 class="text-lg font-semibold">Activity Stream</h1>
+                <div class="flex pt-4">
+                  <img src="assets/img/wl-ph8.png">
+                  <div class="ml-3">
+                    <h1 class="font-semibold">Oscar HolloWay</h1>
+                    <span class="text-sm text-gray-400">UI/UX Designer</span>
+                  </div>
+                </div>
+                <div class="bg-slate-100 rounded-xl p-3 px-5 mt-3 flex items-start">
+                  <img class="mr-2 mt-1" src="assets/img/upload.svg">
+                  <span>Updated the status of Mind Map task to In Progress</span>
+                </div>
+                <div class="bg-slate-100 rounded-xl p-3 px-5 mt-3 flex items-start">
+                  <img class="mr-2 " src="assets/img/gire.svg">
+                  <span>Attached file to the task</span>
+                </div>
+                <div class="flex pt-4">
+                  <img src="assets/img/wl-ph3.png">
+                  <div class="ml-3">
+                    <h1 class="font-semibold">Emili Tyler</h1>
+                    <span class="text-sm text-gray-400">Copywriter</span>
+                  </div>
+                </div>
+                <div class="bg-slate-100 rounded-xl p-3 px-5 mt-3 flex items-start">
+                  <img class="mr-2 mt-1" src="assets/img/upload.svg">
+                  <span>Updated the status of Mind Map task to In Progress</span>
+                </div>
+                <div class="mt-3">
+                  <div class="flex w-fit m-auto cursor-pointer">
+                    <a href="#" class="text-blue-400 font-semibold">View more</a>
+                    <img class="ml-1.5 mt-1" src="assets/img/arrow-b.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main><!-- Start Container -->
     </div>
+    <script src="assets/script.js"></script>
   </body>
 </html>
