@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <title>Nearest Events</title>
+  </head>
+  <body>
+    <div class="p-4 grid grid-cols-7 max-[1100px]:grid-cols-1 bg-slate-100 min-h-lvh">
+      <div id="menu" class="col-span-1 bg-white rounded-3xl py-9 relative max-[1100px]:mb-10 max-[1100px]:hidden"><!-- Start Sidebar -->
+        <img class=" ml-6 mb-8" src="../assets/img/Company's logo.svg" alt="Logo">
+        <div class="px-4 relative"><!-- Start Menu -->
+          <div class="btn-nav bg-slate-100 hover:bg-slate-200">
+            <img src="../assets/img/dashboard.svg">
+            <span class="text-sm ml-3 font-semibold text-blue-400">Dashboard</span>
+          </div>
+          <img class="absolute h-10 top-0 right-0" src="../assets/img/activesection.svg">
+        </div>
+        <div class="px-4 relative">
+          <div class="btn-nav hover:bg-gray-200">
+            <img src="../assets/img/projects.svg">
+            <span class="text-sm ml-3 font-semibold text-gray-400">Projects</span>
+          </div>
+        </div>
+        <div class="px-4 relative">
+          <div class="btn-nav hover:bg-gray-200">
+            <img src="../assets/img/calendar.svg">
+            <span class="text-sm ml-3 font-semibold text-gray-400">Calender</span>
+          </div>
+        </div>
+        <div class="px-4 relative">
+          <div class="btn-nav hover:bg-gray-200">
+            <img src="../assets/img/vacations.svg">
+            <span class="text-sm ml-3 font-semibold text-gray-400">Vacation</span>
+          </div>
+        </div>
+        <div class="px-4 relative">
+          <div class="btn-nav hover:bg-gray-200">
+            <img src="../assets/img/employees.svg">
+            <span class="text-sm ml-3 font-semibold text-gray-400">Employees</span>
+          </div>
+        </div>
+        <div class="px-4 relative">
+          <div class="btn-nav hover:bg-gray-200">
+            <img src="../assets/img/messenger.svg">
+            <span class="text-sm ml-3 font-semibold text-gray-400">Messenger</span>
+          </div>
+        </div>
+        <div class="px-4 relative">
+          <div class="btn-nav hover:bg-gray-200">
+            <img src="../assets/img/infoportal.svg">
+            <span class="text-sm ml-3 font-semibold text-gray-400">Info Portal</span>
+          </div>
+        </div><!-- End Menu -->
+        <div class="bottom-0 mb-10 w-full max-[1100px]:relative max-[1100px]:w-48"><!-- Start Support -->
+          <div class="px-4 justify-center relative pt-11 items-end h-fit">
+            <div>
+              <img class="ml-2 absolute" src="../assets/img/illustration.svg">
+            </div>
+            <div class="justify-center mt-12 bg-slate-100 rounded-xl h-40 pt-24 min-w-full">
+              <div class=" justify-center rounded-md h-5">
+                <button data-modal-targrt="authentication-modal" data-modal-toggle="authentication-modal" class="flex bg-blue-500 rounded-xl py-2 px-3 w-28 bottom-0 justify-center mx-auto shadow-md shadow-blue-700 hover:drop-shadow-lg transition duration-300 items-center" type="button">
+                  <img src="../assets/img/support.svg">
+                  <span class="text-white ml-2">Support</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Support -->
+        <div class="px-4 h-fit items-end bottom-0 mb-4 w-full max-[1100px]:relative"><!-- Start LogOut -->
+          <div class="btn-nav hover:bg-gray-200">
+            <img src="../assets/img/logout.svg">
+            <span class="text-sm ml-3 font-semibold text-gray-400">Log Out</span>
+          </div>
+        </div><!-- End LogOut -->
+      </div><!-- End Sidebar -->
+      <main class="col-span-6 px-6"><!-- Start Container -->
+        <div class="grid-cols-2"><!-- Start Header -->
+          <div class="col-span-1 grid grid-cols-2">
+            <div class="col-span-1"><!-- SearchBox -->
+              <div class="flex bg-white rounded-xl px-2 py-0.5 items-center w-8/12 max-[800px]:w-fit">
+                <label class="ml-1" for="search"><img class="w-4 cursor-pointer p-0" src="../assets/img/search.svg"></label>
+                <input type="search" class="ml-2 font-semibold text-sm border-0 active:border-0" name="search" placeholder="Search">
+              </div>
+              <div class="mt-10">
+                <div>
+                  <a href="../index.html" class="flex cursor-pointer">
+                    <img src="../assets/img/arrow-b2.svg" class="mr-1">
+                    <span class="text-blue-400 text-sm hover:text-blue-500 transition">Back to Dashboard</span>
+                  </a>
+                </div>
+                <h1 class="font-semibold text-4xl mt-2">Nearest Events</h1>
+              </div>
+            </div>
+            <div class="col-span-1">
+              <div class="flex justify-end mb-3">
+                <div class="rounded-xl bg-white w-10 h-10 py-2.5 mr-4 cursor-pointer hover:bg-slate-200 transition-all duration-300">
+                  <img class="mx-auto w-5" src="../assets/img/notifications.svg" alt="Notification">
+                </div>
+                <div class="flex bg-white rounded-xl h-10 items-center px-2 cursor-pointer hover:bg-slate-200 transition-all duration-300">
+                  <img class="w-8 h-8 mr-2" src="../assets/img/evan.png">
+                  <span class="font-semibold max-[1100px]:text-xs">Evan Yates</span>
+                  <img class="w-2.5 ml-3 mt-0.5" src="../assets/img/arrow-d.svg">
+                </div>
+                <div id="burger" class="bg-white rounded-xl ml-2 px-2 py-1.5 hover:bg-slate-200 cursor-pointer transition hidden max-[1100px]:inline-block">
+                  <img class="w-6 mt-0.5" src="../assets/img/Bars4.svg">
+                </div>
+              </div>
+              <div class="relative pt-16">
+                <button class="bg-blue-500 p-2 text-white flex items-center rounded-xl absolute right-0 hover:bg-blue-600 shadow-blue-800 hover:shadow-lg transition"><img class="mr-1" src="../assets/img/ne-plus.svg">Add Event</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Header -->
+        <div class="pt-7">
+          <div class="grid grid-cols-2 gap-5">
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-blue-500 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-b.svg">
+                    <span class="font-semibold ml-2">Presentation of the new department</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-y.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Today | 6:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">4h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-fuchsia-400 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-pi.svg">
+                    <span class="font-semibold ml-2">Anna's Birthday</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-g.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Today | 5:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">2h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-yellow-300 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-y.svg">
+                    <span class="font-semibold ml-2">Meeting with Development Team</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-y.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Tomorrow | 5:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">4h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-fuchsia-400 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-pi.svg">
+                    <span class="font-semibold ml-2">Ray's Birthday</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-g.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Tomorrow | 2:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">1h 30m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-blue-500 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-b.svg">
+                    <span class="font-semibold ml-2">Meeting with CEO</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-y.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Sep 14 | 5:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">1h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-purple-500 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-pe.svg">
+                    <span class="font-semibold ml-2">Movie night (Tenet)</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-g.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Sep 15 | 5:00 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">3h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-fuchsia-400 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-pi.svg">
+                    <span class="font-semibold ml-2">Lucas's Birthday</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-g.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Sep 29 | 5:30 PM</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">2h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5">
+              <div class="border-blue-500 border-l-4 rounded-sm pl-4 pr-0 py-2">
+                <div class="flex relative">
+                  <div class="flex">
+                    <img src="../assets/img/ne-b.svg">
+                    <span class="font-semibold ml-2">Meeting with CTO</span>
+                  </div>
+                  <img class="absolute right-0 mt-1 mr-0.5" src="../assets/img/arrow-y.svg">
+                </div>
+                <div class="flex relative">
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Sep 30 | 12:00</span>
+                  </div>
+                  <div class="bg-slate-100 rounded-md flex items-center p-2 h-fit absolute right-0 mt-2.5">
+                    <img src="../assets/img/clock.svg">
+                    <span class="ml-2 text-xs text-gray-600 font-semibold">1h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main><!-- Start Container -->
+    </div>
+    <script src="../assets/index.js"></script>
+  </body>
+</html>
