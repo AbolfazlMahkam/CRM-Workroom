@@ -60,10 +60,10 @@
             </div>
             <div class="justify-center mt-12 bg-slate-100 rounded-xl h-40 pt-24 min-w-full">
               <div class=" justify-center rounded-md h-5">
-                <a class="flex bg-blue-500 rounded-xl py-2 px-3 w-28 bottom-0 justify-center mx-auto shadow-md shadow-blue-700 hover:drop-shadow-lg transition duration-300" href="#">
+                <button data-modal-targrt="authentication-modal" data-modal-toggle="authentication-modal" class="flex bg-blue-500 rounded-xl py-2 px-3 w-28 bottom-0 justify-center mx-auto shadow-md shadow-blue-700 hover:drop-shadow-lg transition duration-300 items-center" type="button">
                   <img src="assets/img/support.svg">
                   <span class="text-white ml-2">Support</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -79,9 +79,9 @@
         <div class="grid-cols-2"><!-- Start Header -->
           <div class="col-span-1 grid grid-cols-2">
             <div class="col-span-1"><!-- SearchBox -->
-              <div class="flex bg-white rounded-xl p-3 items-center w-8/12 max-[800px]:w-fit">
-                <label class="ml-1" for="search"><img class="w-4 cursor-pointer" src="assets/img/search.svg"></label>
-                <input type="search" class="ml-2 font-semibold text-sm" name="search" placeholder="Search">
+              <div class="flex bg-white rounded-xl px-2 py-0.5 items-center w-8/12 max-[800px]:w-fit">
+                <label class="ml-1" for="search"><img class="w-4 cursor-pointer p-0" src="assets/img/search.svg"></label>
+                <input type="search" class="ml-2 font-semibold text-sm border-0 active:border-0" name="search" placeholder="Search">
               </div>
               <div class="mt-10">
                 <span class="text-sm text-gray-400 font-semibold">Welcome back, Evan!</span>
@@ -95,11 +95,11 @@
                 </div>
                 <div class="flex bg-white rounded-xl h-10 items-center px-2 cursor-pointer hover:bg-slate-200 transition-all duration-300">
                   <img class="w-8 h-8 mr-2" src="assets/img/evan.png">
-                  <span class="font-semibold">Evan Yates</span>
+                  <span class="font-semibold max-[1100px]:text-xs">Evan Yates</span>
                   <img class="w-2.5 ml-3 mt-0.5" src="assets/img/arrow-d.svg">
                 </div>
                 <div id="burger" class="bg-white rounded-xl ml-2 px-2 py-1.5 hover:bg-slate-200 cursor-pointer transition hidden max-[1100px]:inline-block">
-                  <span class="font-semibold text-sm">MENU</span>
+                  <img class="w-6 mt-0.5" src="assets/img/Bars4.svg">
                 </div>
               </div>
               <div dir="rtl" class="pt-2">
