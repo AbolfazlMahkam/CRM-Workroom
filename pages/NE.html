@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Nearest Events</title>
   </head>
   <body>
@@ -76,14 +77,15 @@
         </div><!-- End LogOut -->
       </div><!-- End Sidebar -->
       <main class="col-span-6 px-6"><!-- Start Container -->
+
         <div class="grid-cols-2"><!-- Start Header -->
-          <div class="col-span-1 grid grid-cols-2">
+          <div class="col-span-1 grid grid-cols-2 max-[1000px]:grid-cols-1 relative">
             <div class="col-span-1"><!-- SearchBox -->
-              <div class="flex bg-white rounded-xl px-2 py-0.5 items-center w-8/12 max-[800px]:w-fit">
+              <div class="flex bg-white rounded-xl px-2 py-0.5 items-center w-8/12 max-[1000px]:w-full max-[1000px]:mt-12">
                 <label class="ml-1" for="search"><img class="w-4 cursor-pointer p-0" src="../assets/img/search.svg"></label>
                 <input type="search" class="ml-2 font-semibold text-sm border-0 active:border-0" name="search" placeholder="Search">
               </div>
-              <div class="mt-10">
+              <div class="mt-10 max-[1000px]:mt-4 relative">
                 <div>
                   <a href="../index.html" class="flex cursor-pointer">
                     <img src="../assets/img/arrow-b3.svg" class="mr-1">
@@ -91,11 +93,12 @@
                   </a>
                 </div>
                 <h1 class="font-semibold text-4xl mt-2">Nearest Events</h1>
+                <button class="bg-blue-500 p-2 text-white items-center rounded-xl absolute right-0 top-0 mt-4 hover:bg-blue-600 shadow-blue-800 hover:shadow-lg transition hidden max-[1000px]:flex"><img class="mr-1" src="../assets/img/ne-plus.svg">Add Event</button>
               </div>
             </div>
             <div class="col-span-1">
-              <div class="flex justify-end mb-3">
-                <div class="rounded-xl bg-white w-10 h-10 py-2.5 mr-4 cursor-pointer hover:bg-slate-200 transition-all duration-300">
+              <div class="flex justify-end mb-3 max-[1000px]:absolute max-[1000px]:top-0 max-[1000px]:right-0 max-[1000px]:w-full">
+                <div class="rounded-xl bg-white w-10 h-10 py-2.5 mr-4 cursor-pointer hover:bg-slate-200 transition-all duration-300 max-[1000px]:left-0 max-[1000px]:absolute">
                   <img class="mx-auto w-5" src="../assets/img/notifications.svg" alt="Notification">
                 </div>
                 <div class="flex bg-white rounded-xl h-10 items-center px-2 cursor-pointer hover:bg-slate-200 transition-all duration-300">
@@ -107,12 +110,14 @@
                   <img class="w-6 mt-0.5" src="../assets/img/Bars4.svg">
                 </div>
               </div>
-              <div class="relative pt-16">
-                <button class="bg-blue-500 p-2 text-white flex items-center rounded-xl absolute right-0 hover:bg-blue-600 shadow-blue-800 hover:shadow-lg transition"><img class="mr-1" src="../assets/img/ne-plus.svg">Add Event</button>
+              <div class="relative pt-10 max-[1000px]:pt-0 max-[1000px]:pb-10 max-[1000px]:hidden">
+                <button class="bg-blue-500 p-2 text-white flex items-center rounded-xl absolute right-0 hover:bg-blue-600 shadow-blue-800 hover:shadow-lg transition"><img class="mr-1" src="../assets/img/ne-plus.svg">Add Project</button>
               </div>
             </div>
           </div>
         </div><!-- End Header -->
+
+        
         <div class="pt-7">
           <div class="grid grid-cols-2 gap-5 max-[1100px]:grid-cols-1">
             <div class="bg-white rounded-2xl p-5">

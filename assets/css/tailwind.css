@@ -3174,10 +3174,6 @@ input:checked + .toggle-bg {
   padding-top: 2.75rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -4121,18 +4117,6 @@ input:checked + .toggle-bg {
     line-height: 1rem;
   }
 
-  .max-\[1100px\]\:shadow-lg {
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .max-\[1100px\]\:shadow-xl {
-    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
   .max-\[1100px\]\:shadow-2xl {
     --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -4140,10 +4124,62 @@ input:checked + .toggle-bg {
   }
 }
 
-@media (max-width: 800px) {
-  .max-\[800px\]\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
+@media (max-width: 1000px) {
+  .max-\[1000px\]\:absolute {
+    position: absolute;
+  }
+
+  .max-\[1000px\]\:left-0 {
+    left: 0px;
+  }
+
+  .max-\[1000px\]\:right-0 {
+    right: 0px;
+  }
+
+  .max-\[1000px\]\:top-0 {
+    top: 0px;
+  }
+
+  .max-\[1000px\]\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .max-\[1000px\]\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .max-\[1000px\]\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .max-\[1000px\]\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .max-\[1000px\]\:flex {
+    display: flex;
+  }
+
+  .max-\[1000px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[1000px\]\:w-full {
+    width: 100%;
+  }
+
+  .max-\[1000px\]\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-\[1000px\]\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .max-\[1000px\]\:pt-0 {
+    padding-top: 0px;
   }
 }
 
