@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/tailwind.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>CRM Workroom</title>
   </head>
   <body>
-    <div class="dark-bg p-4 grid grid-cols-7 max-[1100px]:grid-cols-1 bg-slate-100 min-h-lvh relative">
+    <div class="p-4 grid grid-cols-7 max-[1100px]:grid-cols-1 bg-slate-100 min-h-lvh relative">
       <div class="col-span-1 bg-white rounded-3xl py-9 relative max-[1100px]:mb-10 max-[1100px]:hidden"><!-- Start Sidebar -->
         <img class=" ml-6 mb-8" src="assets/img/Company's logo.svg" alt="Logo">
         <div class="px-4 relative"><!-- Start Menu -->
@@ -490,7 +489,7 @@
           </div>
         </div>
       </main><!-- End Container -->
-      <div id="menu" class="mt-2 ml-2 col-span-1 bg-white rounded-3xl py-9 relative max-[1100px]:mb-10 hidden max-[1100px]:absolute max-[1100px]:left-0  shadow-slate-800 max-[1100px]:shadow-2xl transition"><!-- Start Sidebar -->
+      <div id="menu" class="hidden mt-2 ml-2 col-span-1 bg-white rounded-3xl py-9 relative max-[1100px]:mb-10 max-[1100px]:absolute max-[1100px]:left-0  shadow-slate-800 max-[1100px]:shadow-2xl transition"><!-- Start Sidebar -->
         <img class=" ml-6 mb-8" src="assets/img/Company's logo.svg" alt="Logo">
         <div class="px-4 relative"><!-- Start Menu -->
           <div class="btn-nav bg-slate-100 hover:bg-slate-200">
@@ -558,16 +557,6 @@
         </div><!-- End LogOut -->
       </div><!-- End Sidebar -->
     </div>
-    <script>
-      $(document).ready(function(){
-        $("#burger").click(function(){
-          if ($("#menu").hasClass('hidden')) {
-            $("#menu").removeClass('hidden')
-          } else {
-            $("#menu").addClass('hidden')
-          }
-        });
-      });
-      </script>
+    <script src="assets/index.js"></script>
   </body>
 </html>
