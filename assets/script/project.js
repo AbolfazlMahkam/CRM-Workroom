@@ -3,11 +3,11 @@ let menu = document.querySelector('#menu');
 let menuBtn = document.querySelector('#burger');
 
 menuBtn.addEventListener('click', function () {
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-    } else {
-        menu.classList.add('hidden');
-    }
+  if (menu.classList.contains('hidden')) {
+    menu.classList.remove('hidden');
+  } else {
+    menu.classList.add('hidden');
+  }
 });
 
 // Project page
@@ -17,12 +17,12 @@ let pSMB3 = document.querySelector('#shMoBtn3');
 let pSM1 = document.querySelector('#projShowModel1');
 let pSM2 = document.querySelector('#projShowModel2');
 let pSM3 = document.querySelector('#projShowModel3');
-let pSMBI1l = document.querySelector('prShMoBtnIcon1-b')
-let pSMBI1b = document.querySelector('prShMoBtnIcon1-bl')
-let pSMBI2l = document.querySelector('prShMoBtnIcon2-b')
-let pSMBI2b = document.querySelector('prShMoBtnIcon2-bl')
-let pSMBI3l = document.querySelector('prShMoBtnIcon3-b')
-let pSMBI3b = document.querySelector('prShMoBtnIcon3-bl')
+let pSMBI1l = document.querySelector('#prShMoBtnIcon1-b')
+let pSMBI1b = document.querySelector('#prShMoBtnIcon1-bl')
+let pSMBI2l = document.querySelector('#prShMoBtnIcon2-b')
+let pSMBI2b = document.querySelector('#prShMoBtnIcon2-bl')
+let pSMBI3l = document.querySelector('#prShMoBtnIcon3-b')
+let pSMBI3b = document.querySelector('#prShMoBtnIcon3-bl')
 
 
 pSMB1.addEventListener('click', function () {
@@ -36,6 +36,12 @@ pSMB1.addEventListener('click', function () {
         pSMB2.classList.remove('border-blue-400');
         pSMB3.classList.remove('border');
         pSMB3.classList.remove('border-blue-400');
+        pSMBI1b.classList.add('hidden')
+        pSMBI1l.classList.remove('hidden')
+        pSMBI2b.classList.add('hidden')
+        pSMBI2l.classList.remove('hidden')
+        pSMBI3b.classList.add('hidden')
+        pSMBI3l.classList.remove('hidden')
     } else {
         return;
     }
@@ -51,10 +57,12 @@ pSMB2.addEventListener('click', function () {
         pSMB1.classList.remove('border-blue-400');
         pSMB3.classList.remove('border');
         pSMB3.classList.remove('border-blue-400');
-        pSMBI2b.classList.add('hidden')
-        pSMBI2l.classList.remove('hidden')
+        pSMBI2l.classList.add('hidden')
+        pSMBI2b.classList.remove('hidden')
         pSMBI1l.classList.add('hidden')
         pSMBI1b.classList.remove('hidden')
+        pSMBI3b.classList.add('hidden')
+        pSMBI3l.classList.remove('hidden')
     } else {
         return;
     }
@@ -70,6 +78,12 @@ pSMB3.addEventListener('click', function () {
         pSMB1.classList.remove('border-blue-400');
         pSMB2.classList.remove('border');
         pSMB2.classList.remove('border-blue-400');
+        pSMBI3l.classList.add('hidden')
+        pSMBI3b.classList.remove('hidden')
+        pSMBI1l.classList.add('hidden')
+        pSMBI1b.classList.remove('hidden')
+        pSMBI2b.classList.add('hidden')
+        pSMBI2l.classList.remove('hidden')
     } else {
         return;
     }

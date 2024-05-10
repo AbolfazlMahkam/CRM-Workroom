@@ -4108,6 +4108,11 @@ input:checked + .toggle-bg {
     gap: 1rem;
   }
 
+  .max-\[1100px\]\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .max-\[1100px\]\:pl-0 {
     padding-left: 0px;
   }

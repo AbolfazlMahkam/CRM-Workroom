@@ -76,7 +76,7 @@
           </div>
         </div><!-- End LogOut -->
       </div><!-- End Sidebar -->
-      <main class="col-span-6 px-6"><!-- Start Container -->
+      <main class="col-span-6 px-6 max-[1100px]:px-0"><!-- Start Container -->
         <div class="grid-cols-2"><!-- Start Header -->
           <div class="col-span-1 grid grid-cols-2 max-[1000px]:grid-cols-1 relative">
             <div class="col-span-1"><!-- SearchBox -->
@@ -84,6 +84,73 @@
                 <label class="ml-1" for="search"><img class="w-4 cursor-pointer p-0" src="assets/img/search.svg"></label>
                 <input type="search" class="ml-2 font-semibold text-sm border-0 active:border-0" name="search" placeholder="Search">
               </div>
+              <div id="menu" class="hidden mt-2 col-span-1 bg-white rounded-3xl py-9 relative max-[1100px]:mb-10 max-[1100px]:left-0  shadow-slate-800 max-[1100px]:shadow-2xl transition"><!-- Start Responcive Menu -->
+                <img class=" ml-6 mb-8" src="assets/img/Company's logo.svg" alt="Logo">
+                <div class="px-4 relative"><!-- Start Menu -->
+                  <div class="btn-nav bg-slate-100 hover:bg-slate-200">
+                    <img src="assets/img/dashboard-a.svg">
+                    <span class="text-sm ml-3 font-semibold text-blue-400">Dashboard</span>
+                  </div>
+                  <img class="absolute h-10 top-0 right-0" src="assets/img/activesection.svg">
+                </div>
+                <div class="px-4 relative">
+                  <a href="pages/Project.html" class="btn-nav hover:bg-gray-200">
+                    <img src="assets/img/projects.svg">
+                    <span class="text-sm ml-3 font-semibold text-gray-400">Projects</span>
+                  </a>
+                </div>
+                <div class="px-4 relative">
+                  <div class="btn-nav hover:bg-gray-200">
+                    <img src="assets/img/calendar.svg">
+                    <span class="text-sm ml-3 font-semibold text-gray-400">Calender</span>
+                  </div>
+                </div>
+                <div class="px-4 relative">
+                  <div class="btn-nav hover:bg-gray-200">
+                    <img src="assets/img/vacations.svg">
+                    <span class="text-sm ml-3 font-semibold text-gray-400">Vacation</span>
+                  </div>
+                </div>
+                <div class="px-4 relative">
+                  <div class="btn-nav hover:bg-gray-200">
+                    <img src="assets/img/employees.svg">
+                    <span class="text-sm ml-3 font-semibold text-gray-400">Employees</span>
+                  </div>
+                </div>
+                <div class="px-4 relative">
+                  <div class="btn-nav hover:bg-gray-200">
+                    <img src="assets/img/messenger.svg">
+                    <span class="text-sm ml-3 font-semibold text-gray-400">Messenger</span>
+                  </div>
+                </div>
+                <div class="px-4 relative">
+                  <div class="btn-nav hover:bg-gray-200">
+                    <img src="assets/img/infoportal.svg">
+                    <span class="text-sm ml-3 font-semibold text-gray-400">Info Portal</span>
+                  </div>
+                </div><!-- End Menu -->
+                <div class="absolute bottom-0 mb-20 w-full max-[1100px]:relative max-[1100px]:w-48"><!-- Start Support -->
+                  <div class="px-4 justify-center relative pt-11 items-end h-fit">
+                    <div>
+                      <img class="ml-2 absolute" src="assets/img/illustration.svg">
+                    </div>
+                    <div class="justify-center mt-12 bg-slate-100 rounded-xl h-40 pt-24 min-w-full">
+                      <div class=" justify-center rounded-md h-5">
+                        <button data-modal-targrt="authentication-modal" data-modal-toggle="authentication-modal" class="flex bg-blue-500 rounded-xl py-2 px-3 w-28 bottom-0 justify-center mx-auto shadow-md shadow-blue-700 hover:drop-shadow-lg transition duration-300 items-center" type="button">
+                          <img src="assets/img/support.svg">
+                          <span class="text-white ml-2">Support</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Support -->
+                <div class="px-4 h-fit items-end absolute bottom-0 mb-4 w-full max-[1100px]:relative"><!-- Start LogOut -->
+                  <div class="btn-nav hover:bg-gray-200">
+                    <img src="assets/img/logout.svg">
+                    <span class="text-sm ml-3 font-semibold text-gray-400">Log Out</span>
+                  </div>
+                </div><!-- End LogOut -->
+              </div><!-- End Responcive Menu -->
               <div class="mt-10 max-[1000px]:mt-3">
                 <span class="text-sm text-gray-400 font-semibold">Welcome back, Evan!</span>
                 <h1 class="font-semibold text-4xl mt-2">Dashbord</h1>
@@ -489,74 +556,7 @@
           </div>
         </div>
       </main><!-- End Container -->
-      <div id="menu" class="hidden mt-2 ml-2 col-span-1 bg-white rounded-3xl py-9 relative max-[1100px]:mb-10 max-[1100px]:absolute max-[1100px]:left-0  shadow-slate-800 max-[1100px]:shadow-2xl transition"><!-- Start Sidebar -->
-        <img class=" ml-6 mb-8" src="assets/img/Company's logo.svg" alt="Logo">
-        <div class="px-4 relative"><!-- Start Menu -->
-          <div class="btn-nav bg-slate-100 hover:bg-slate-200">
-            <img src="assets/img/dashboard-a.svg">
-            <span class="text-sm ml-3 font-semibold text-blue-400">Dashboard</span>
-          </div>
-          <img class="absolute h-10 top-0 right-0" src="assets/img/activesection.svg">
-        </div>
-        <div class="px-4 relative">
-          <a href="pages/Project.html" class="btn-nav hover:bg-gray-200">
-            <img src="assets/img/projects.svg">
-            <span class="text-sm ml-3 font-semibold text-gray-400">Projects</span>
-          </a>
-        </div>
-        <div class="px-4 relative">
-          <div class="btn-nav hover:bg-gray-200">
-            <img src="assets/img/calendar.svg">
-            <span class="text-sm ml-3 font-semibold text-gray-400">Calender</span>
-          </div>
-        </div>
-        <div class="px-4 relative">
-          <div class="btn-nav hover:bg-gray-200">
-            <img src="assets/img/vacations.svg">
-            <span class="text-sm ml-3 font-semibold text-gray-400">Vacation</span>
-          </div>
-        </div>
-        <div class="px-4 relative">
-          <div class="btn-nav hover:bg-gray-200">
-            <img src="assets/img/employees.svg">
-            <span class="text-sm ml-3 font-semibold text-gray-400">Employees</span>
-          </div>
-        </div>
-        <div class="px-4 relative">
-          <div class="btn-nav hover:bg-gray-200">
-            <img src="assets/img/messenger.svg">
-            <span class="text-sm ml-3 font-semibold text-gray-400">Messenger</span>
-          </div>
-        </div>
-        <div class="px-4 relative">
-          <div class="btn-nav hover:bg-gray-200">
-            <img src="assets/img/infoportal.svg">
-            <span class="text-sm ml-3 font-semibold text-gray-400">Info Portal</span>
-          </div>
-        </div><!-- End Menu -->
-        <div class="absolute bottom-0 mb-20 w-full max-[1100px]:relative max-[1100px]:w-48"><!-- Start Support -->
-          <div class="px-4 justify-center relative pt-11 items-end h-fit">
-            <div>
-              <img class="ml-2 absolute" src="assets/img/illustration.svg">
-            </div>
-            <div class="justify-center mt-12 bg-slate-100 rounded-xl h-40 pt-24 min-w-full">
-              <div class=" justify-center rounded-md h-5">
-                <button data-modal-targrt="authentication-modal" data-modal-toggle="authentication-modal" class="flex bg-blue-500 rounded-xl py-2 px-3 w-28 bottom-0 justify-center mx-auto shadow-md shadow-blue-700 hover:drop-shadow-lg transition duration-300 items-center" type="button">
-                  <img src="assets/img/support.svg">
-                  <span class="text-white ml-2">Support</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Support -->
-        <div class="px-4 h-fit items-end absolute bottom-0 mb-4 w-full max-[1100px]:relative"><!-- Start LogOut -->
-          <div class="btn-nav hover:bg-gray-200">
-            <img src="assets/img/logout.svg">
-            <span class="text-sm ml-3 font-semibold text-gray-400">Log Out</span>
-          </div>
-        </div><!-- End LogOut -->
-      </div><!-- End Sidebar -->
     </div>
-    <script src="assets/index.js"></script>
+    <script src="assets/script/index.js"></script>
   </body>
 </html>
