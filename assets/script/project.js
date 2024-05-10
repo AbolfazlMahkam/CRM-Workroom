@@ -36,12 +36,12 @@ pSMB1.addEventListener('click', function () {
         pSMB2.classList.remove('border-blue-400');
         pSMB3.classList.remove('border');
         pSMB3.classList.remove('border-blue-400');
-        pSMBI1b.classList.add('hidden')
-        pSMBI1l.classList.remove('hidden')
-        pSMBI2b.classList.add('hidden')
-        pSMBI2l.classList.remove('hidden')
-        pSMBI3b.classList.add('hidden')
-        pSMBI3l.classList.remove('hidden')
+        pSMBI1b.classList.add('hidden');
+        pSMBI1l.classList.remove('hidden');
+        pSMBI2b.classList.add('hidden');
+        pSMBI2l.classList.remove('hidden');
+        pSMBI3b.classList.add('hidden');
+        pSMBI3l.classList.remove('hidden');
     } else {
         return;
     }
@@ -57,12 +57,12 @@ pSMB2.addEventListener('click', function () {
         pSMB1.classList.remove('border-blue-400');
         pSMB3.classList.remove('border');
         pSMB3.classList.remove('border-blue-400');
-        pSMBI2l.classList.add('hidden')
-        pSMBI2b.classList.remove('hidden')
-        pSMBI1l.classList.add('hidden')
-        pSMBI1b.classList.remove('hidden')
-        pSMBI3b.classList.add('hidden')
-        pSMBI3l.classList.remove('hidden')
+        pSMBI2l.classList.add('hidden');
+        pSMBI2b.classList.remove('hidden');
+        pSMBI1l.classList.add('hidden');
+        pSMBI1b.classList.remove('hidden');
+        pSMBI3b.classList.add('hidden');
+        pSMBI3l.classList.remove('hidden');
     } else {
         return;
     }
@@ -78,12 +78,36 @@ pSMB3.addEventListener('click', function () {
         pSMB1.classList.remove('border-blue-400');
         pSMB2.classList.remove('border');
         pSMB2.classList.remove('border-blue-400');
-        pSMBI3l.classList.add('hidden')
-        pSMBI3b.classList.remove('hidden')
-        pSMBI1l.classList.add('hidden')
-        pSMBI1b.classList.remove('hidden')
-        pSMBI2b.classList.add('hidden')
-        pSMBI2l.classList.remove('hidden')
+        pSMBI3l.classList.add('hidden');
+        pSMBI3b.classList.remove('hidden');
+        pSMBI1l.classList.add('hidden');
+        pSMBI1b.classList.remove('hidden');
+        pSMBI2b.classList.add('hidden');
+        pSMBI2l.classList.remove('hidden');
+    } else {
+        return;
+    }
+});
+
+// Current Box
+let viDeBtn = document.querySelector('#viewDetail');
+let cuBx = document.querySelector('#currentBx');
+let prDe = document.querySelector('#projectDetail');
+let backBtn = document.querySelector('#backToProjectList');
+
+viDeBtn.addEventListener('click', function () {
+    if (prDe.classList.contains('hidden')) {
+        prDe.classList.remove('hidden');
+        cuBx.classList.add('hidden');
+    } else {
+        return;
+    }
+});
+
+backBtn.addEventListener('click', function () {
+    if (cuBx.classList.contains('hidden')) {
+        cuBx.classList.remove('hidden');
+        prDe.classList.add('hidden');
     } else {
         return;
     }

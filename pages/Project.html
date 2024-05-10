@@ -179,41 +179,99 @@
           <div class="grid grid-cols-4 max-[1100px]:grid-cols-1">
             <div class="col-span-1 h-lv h-full">
               <div class="bg-white rounded-3xl py-4  h-full">
-                <div class="flex px-4 border-gray-200 border-b pb-4">
-                  <span class="font-semibold mr-3">Current Project</span>
-                  <img class="mt-1" src="../assets/img/arrow-d.svg" alt="">
-                </div>
-                <div>
-                  <div class="p-2 pr-3 relative grid max-[1100px]:grid-cols-2 max-[1100px]:gap-4">
-                    <div class="p-3 bg-slate-100 rounded-2xl mb-2 hover:bg-slate-200 transition cursor-pointer">
-                      <span class="text-gray-400 text-sm">PN0001265</span>
-                      <h1 class="font-semibold">Medical App (IOS native)</h1>
-                      <div class="flex">
-                        <a href="Project-MA.html" class="text-blue-400 text-sm font-semibold hover:text-blue-500 transition">View details</a>
-                        <img class="ml-2" src="../assets/img/arrow-b2.svg">
+                <div id="currentBx">
+                  <div class="flex px-4 border-gray-200 border-b pb-4">
+                    <span class="font-semibold mr-3">Current Project</span>
+                    <img class="mt-1" src="../assets/img/arrow-d.svg" alt="">
+                  </div>
+                  <div>
+                    <div class="p-2 pr-3 relative grid max-[1100px]:grid-cols-2 max-[1100px]:gap-4">
+                      <div class="p-3 bg-slate-100 rounded-2xl mb-2 hover:bg-slate-200 transition cursor-pointer">
+                        <span class="text-gray-400 text-sm">PN0001265</span>
+                        <h1 class="font-semibold">Medical App (IOS native)</h1>
+                        <div id="viewDetail" class="flex cursor-pointer">
+                          <button class="text-blue-400 text-sm font-semibold cursor-pointer hover:text-blue-500 transition">View details</button>
+                          <img class="ml-2" src="../assets/img/arrow-b2.svg">
+                        </div>
+                      </div>
+                      <img class="absolute h-20 top-0.5 right-0 mt-3 max-[1100px]:left-0" src="../assets/img/activesection2.svg">
+                      <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
+                        <span class="text-gray-400 text-sm">PN0001245</span>
+                        <h1 class="font-semibold">Food Delivery Service</h1>
+                      </div>
+                      <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
+                        <span class="text-gray-400 text-sm">PN0001245</span>
+                        <h1 class="font-semibold">Fortune website</h1>
+                      </div>
+                      <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
+                        <span class="text-gray-400 text-sm">PN0001245</span>
+                        <h1 class="font-semibold">Planner App</h1>
+                      </div>
+                      <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
+                        <span class="text-gray-400 text-sm">PN0001245</span>
+                        <h1 class="font-semibold">Timer tracker - personal account</h1>
+                      </div>
+                      <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
+                        <span class="text-gray-400 text-sm">PN0001245</span>
+                        <h1 class="font-semibold">Internal Project</h1>
                       </div>
                     </div>
-                    <img class="absolute h-20 top-0.5 right-0 mt-3 max-[1100px]:left-0" src="../assets/img/activesection2.svg">
-                    <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
-                      <span class="text-gray-400 text-sm">PN0001245</span>
-                      <h1 class="font-semibold">Food Delivery Service</h1>
+                  </div>
+                </div>
+                <div id="projectDetail" class="hidden px-4">
+                  <div class="flex relative">
+                    <div>
+                      <span class="text-sm text-gray-400">Project Number</span>
+                      <h1 class="pt-1">PN0001245</h1>
                     </div>
-                    <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
-                      <span class="text-gray-400 text-sm">PN0001245</span>
-                      <h1 class="font-semibold">Fortune website</h1>
+                    <div class="absolute right-0 bg-slate-100 rounded-lg p-2 cursor-pointer hover:bg-slate-200 transition">
+                      <img src="../assets/img/filter.svg">
                     </div>
-                    <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
-                      <span class="text-gray-400 text-sm">PN0001245</span>
-                      <h1 class="font-semibold">Planner App</h1>
+                  </div>
+                  <div class="pr-10 pt-5">
+                    <h1 class="font-semibold">Description</h1>
+                    <span class="text-gray-500 text-sm">App for maintaining you medical record making appointments with a doctor, storing prescription</span>
+                  </div>
+                  <div class="pt-4">
+                    <span class="text-sm text-gray-400">Reported</span>
+                    <div class="flex pt-1">
+                      <img class="w-6 h-6 mr-2" src="../assets/img/evan.png">
+                      <span>Evan Yates</span>
                     </div>
-                    <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
-                      <span class="text-gray-400 text-sm">PN0001245</span>
-                      <h1 class="font-semibold">Timer tracker - personal account</h1>
+                  </div>
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Assignees</span>
+                    <div class="relative">
+                      <img class="w-5 absolute border-white border rounded-full" src="../assets/img/wl-ph5.png">
+                      <img class="w-5 absolute ml-4 border-white border rounded-full" src="../assets/img/wl-ph2.png">
+                      <img class="w-5 absolute ml-8 border-white border rounded-full" src="../assets/img/wl-ph8.png">
+                      <div class="bg-blue-400 p-0.5 rounded-full w-5 h-5 text-white text-xs absolute ml-12">+2</div>
                     </div>
-                    <div class="p-3 rounded-2xl hover:bg-gray-200 transition cursor-pointer">
-                      <span class="text-gray-400 text-sm">PN0001245</span>
-                      <h1 class="font-semibold">Internal Project</h1>
+                  </div>
+                  <div class="pt-7">
+                    <span class="text-sm text-gray-400">Priority</span>
+                    <div class="flex pt-1">
+                      <img src="../assets/img/arrow-y.svg">
+                      <span class="text-sm text-yellow-300 ml-1 mt-0.5">Medium</span>
                     </div>
+                  </div>
+                  <div class="pt-3">
+                    <span class="text-sm text-gray-400">Dead Line</span>
+                    <h1>Feb 23, 2020</h1>
+                  </div>                  
+                  <div class="pt-7 pl-1">
+                    <div class="flex">
+                      <img class="w-4 mr-2" src="../assets/img/calendar.svg">
+                      <span class="text-gray-500 text-sm">Created Sep 12,2020</span>
+                    </div>
+                  </div>
+                  <div class="flex gap-3 pl-1 pt-3">
+                    <img class="bg-purple-100 p-2 rounded-lg hover:bg-purple-200 transition cursor-pointer" src="../assets/img/gire.svg">
+                    <img class="bg-teal-100 p-2 rounded-lg hover:bg-teal-200 transition cursor-pointer" src="../assets/img/gire.svg">
+                  </div>
+                  <div id="backToProjectList" class="flex cursor-pointer pt-2">
+                    <img class="mr-1" src="../assets/img/arrow-b3.svg">
+                    <button class="text-blue-400 text-sm font-semibold cursor-pointer hover:text-blue-500 transition">Back to Project list</button>
                   </div>
                 </div>
               </div>
