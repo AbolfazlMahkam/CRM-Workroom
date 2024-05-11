@@ -9,3 +9,42 @@ menuBtn.addEventListener('click', function () {
         menu.classList.add('hidden');
     }
 });
+
+// Support Box
+let sBtn = document.querySelector('#supportBtn');
+// let reSBtn = document.querySelector('#resupportBtn');
+let sBx = document.querySelector('#supportBx');
+let sCls = document.querySelector('#supportClose');
+let sSprt = document.querySelector('#sendSupport')
+
+sBtn.addEventListener('click', function () {
+    if (sBx.classList.contains('hidden')) {
+        sBx.classList.remove('hidden');
+    } else {
+        return;
+    }
+});
+
+// reSBtn.addEventListener('click', function () {
+//     if (sBx.classList.contains('hidden')) {
+//         sBx.classList.remove('hidden');
+//     } else {
+//         return;
+//     }
+// });
+
+sCls.addEventListener('click', function () {
+    if (sBx.classList.contains('hidden')) {
+        return;
+    } else {
+        sBx.classList.add('hidden');
+    }
+});
+
+sSprt.addEventListener('click', function () {
+    if (sBx.classList.contains('hidden')) {
+        return;
+    } else {
+        sBx.classList.add('hidden');
+    }
+});

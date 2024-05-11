@@ -10,6 +10,45 @@ menuBtn.addEventListener('click', function () {
   }
 });
 
+// Support Box
+let sBtn = document.querySelector('#supportBtn');
+// let reSBtn = document.querySelector('#resupportBtn');
+let sBx = document.querySelector('#supportBx');
+let sCls = document.querySelector('#supportClose');
+let sSprt = document.querySelector('#sendSupport')
+
+sBtn.addEventListener('click', function () {
+    if (sBx.classList.contains('hidden')) {
+        sBx.classList.remove('hidden');
+    } else {
+        return;
+    }
+});
+
+// reSBtn.addEventListener('click', function () {
+//     if (sBx.classList.contains('hidden')) {
+//         sBx.classList.remove('hidden');
+//     } else {
+//         return;
+//     }
+// });
+
+sCls.addEventListener('click', function () {
+    if (sBx.classList.contains('hidden')) {
+        return;
+    } else {
+        sBx.classList.add('hidden');
+    }
+});
+
+sSprt.addEventListener('click', function () {
+    if (sBx.classList.contains('hidden')) {
+        return;
+    } else {
+        sBx.classList.add('hidden');
+    }
+});
+
 // Project page
 let pSMB1 = document.querySelector('#shMoBtn1');
 let pSMB2 = document.querySelector('#shMoBtn2');
