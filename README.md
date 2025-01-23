@@ -57,24 +57,13 @@ This project incorporates several essential npm packages to enhance functionalit
 
 To run the application locally, follow these steps:
 
-Clone the Repository:
-
-git clone <repository-url>
-cd <project-directory>
-
-Install Dependencies:
-
-npm install
-
-Start the JSON Server:
-
-npx json-server --watch data.json --port 3001
-
-Start the Development Server:
-
-npm run dev
-
-The application will run on http://localhost:5173.
+1. Clone the Repository: ```git clone ```
+2. navigate to the CRM-Workroom project directory ```cd CRM-Workroom```.
+3. Run ```npm install``` to install all necessary node modules.
+4. Run ```npm update``` to ensure all node modules are up to date.
+5. Start the JSON-Server by running ```npx json-server --watch ./data/database.json```. The server will listen on port 9500.
+6. Start the Development Server by running ```npm run dev```. The server will listen on port 5173.
+7. Open your preferred browser and go to ````127.0.0.1:5173```` or ```localhost:5173``` to access the application.
 
 # 🔍 Project Highlights
 
