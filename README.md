@@ -4,25 +4,25 @@ Welcome to the **Figma-Based** UI Project! This project is a responsive and dyna
 
 [![My Skills](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
 
-Link to the sample section: [Link Text](#sample-section).
+
 
 # 🔑 Key Features
 
 ### This web application offers the following functionalities:
 
-* Dynamic UI Components:
+  - Dynamic UI Components:
 Recreated the Figma-based design using reusable and modular React components.
 
-* Responsive Design:
+  - Responsive Design:
 Ensured compatibility with different screen sizes and resolutions.
 
-* Interactive Elements:
+  - Interactive Elements:
 Added functionality to interactive elements (buttons, forms, and more) for a seamless user experience.
 
-* Dark Mode and Light Mode:
+  - Dark Mode and Light Mode:
 Implemented theme switching functionality to toggle between dark and light modes.
 
-* Dynamic Data Fetching:
+  - Dynamic Data Fetching:
 Integrated data fetching using react-query and axios to load data from a JSON file served via json-server.
 
 # 🔗 Technologies Used
