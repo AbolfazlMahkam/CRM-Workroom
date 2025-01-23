@@ -1,10 +1,10 @@
 # ✅ Figma-Based UI Project
 
-Welcome to the **Figma-Based** UI Project! This project is a responsive and dynamic web application built using the design and layout from a Figma template. The application showcases intuitive user interactions and a modern interface, reconstructed using React.js.
-
-> asdsadasdasdasd
+Welcome to the **Figma-Based** UI Project! This project is a responsive and dynamic web application built using the design and layout from a [Figma template]([url](https://www.figma.com/community/file/1314498920967386967)). The application showcases intuitive user interactions and a modern interface, reconstructed using React.js.
 
 [![My Skills](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
+
+Link to the sample section: [Link Text](#sample-section).
 
 # 🔑 Key Features
 
@@ -63,13 +63,17 @@ The front-end of this project is built using:
 
 ### To run the application locally, follow these steps:
 
-1. Clone the Repository: ```git clone https://github.com/AbolfazlMahkam/CRM-Workroom.git``` or ```git clone git@github.com:AbolfazlMahkam/CRM-Workroom.git```.
-2. navigate to the CRM-Workroom project directory ```cd CRM-Workroom```.
-3. Run ```npm install``` to install all necessary node modules.
-4. Run ```npm update``` to ensure all node modules are up to date.
-5. Start the JSON-Server by running ```npx json-server --watch ./data/database.json```. The server will listen on port 9500.
-6. Start the Development Server by running ```npm run dev```. The server will listen on port 5173.
-7. Open your preferred browser and go to ````127.0.0.1:5173```` or ```localhost:5173``` to access the application.
+1. Clone the Repository:
+```
+git clone https://github.com/AbolfazlMahkam/CRM-Workroom.git
+git clone git@github.com:AbolfazlMahkam/CRM-Workroom.git
+```
+4. navigate to the CRM-Workroom project directory ```cd CRM-Workroom```.
+5. Run `npm install` to install all necessary node modules.
+6. Run `npm update` to ensure all node modules are up to date.
+7. Start the JSON-Server by running `npx json-server --watch ./data/database.json`. The server will listen on port 9500.
+8. Start the Development Server by running `npm run dev`. The server will listen on port 5173.
+9. Open your preferred browser and go to `127.0.0.1:5173` or `localhost:5173` to access the application.
 
 # 🔍 Project Highlights
 
