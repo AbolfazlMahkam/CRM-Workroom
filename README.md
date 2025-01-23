@@ -35,6 +35,8 @@ The front-end of this project is built using:
 
 * JavaScript (ES6+): For adding interactivity and logic to the application.
 
+[![My Skills](https://skillicons.dev/icons?i=vite,react,tailwind,js)](https://skillicons.dev)
+
 Data Management:
 
 * JSON-Server: To serve data from a local JSON file.
