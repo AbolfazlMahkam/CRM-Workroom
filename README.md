@@ -4,7 +4,9 @@ Welcome to the **Figma-Based** UI Project! This project is a responsive and dyna
 
 [![My Skills](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
 
-
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
 
 # 🔑 Key Features
 
