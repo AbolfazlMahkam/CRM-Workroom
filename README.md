@@ -4,7 +4,7 @@ Welcome to the Figma-Based UI Project! This project is a responsive and dynamic 
 
 # 🔑 Key Features
 
-This web application offers the following functionalities:
+### This web application offers the following functionalities:
 
 * Dynamic UI Components:
 Recreated the Figma-based design using reusable and modular React components.
@@ -23,7 +23,7 @@ Integrated data fetching using react-query and axios to load data from a JSON fi
 
 # 🔗 Technologies Used
 
-Front-End:
+### Front-End:
 
 The front-end of this project is built using:
 
@@ -37,7 +37,7 @@ The front-end of this project is built using:
 
 [![My Skills](https://skillicons.dev/icons?i=vite,react,tailwind,js)](https://skillicons.dev)
 
-Data Management:
+### Data Management:
 
 * JSON-Server: To serve data from a local JSON file.
 
@@ -47,7 +47,7 @@ Data Management:
 
 # 📦 NPM Packages Used
 
-This project incorporates several essential npm packages to enhance functionality:
+### This project incorporates several essential npm packages to enhance functionality:
 
 * React Router: For managing navigation and routing within the application.
 
@@ -57,7 +57,7 @@ This project incorporates several essential npm packages to enhance functionalit
 
 # 🚀 Steps to Run the Application
 
-To run the application locally, follow these steps:
+### To run the application locally, follow these steps:
 
 1. Clone the Repository: ```git clone https://github.com/AbolfazlMahkam/CRM-Workroom.git``` or ```git clone git@github.com:AbolfazlMahkam/CRM-Workroom.git```.
 2. navigate to the CRM-Workroom project directory ```cd CRM-Workroom```.
