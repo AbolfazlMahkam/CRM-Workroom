@@ -1,6 +1,10 @@
 # ✅ Figma-Based UI Project
 
-Welcome to the Figma-Based UI Project! This project is a responsive and dynamic web application built using the design and layout from a Figma template. The application showcases intuitive user interactions and a modern interface, reconstructed using React.js.
+Welcome to the **Figma-Based** UI Project! This project is a responsive and dynamic web application built using the design and layout from a Figma template. The application showcases intuitive user interactions and a modern interface, reconstructed using React.js.
+
+> asdsadasdasdasd
+
+[![My Skills](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
 
 # 🔑 Key Features
 
