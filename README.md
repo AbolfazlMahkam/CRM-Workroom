@@ -4,11 +4,7 @@ Welcome to the **Figma-Based** UI Project! This project is a responsive and dyna
 
 [![My Skills](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
 
-A footnote can also have multiple lines[^2].
-
-[^1]: My reference.
-[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
-  This is a second line.
+![293257707-147b3ed9-52db-49ee-9fcc-7f5e153a8ea0](https://github.com/user-attachments/assets/886954c0-4177-4a72-b6a7-eb47c00cdcaa)
 
 # 🔑 Key Features
 
