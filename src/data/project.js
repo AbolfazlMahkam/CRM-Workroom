@@ -1,0 +1,73 @@
+export const dashboardProjects = [
+  {
+    img: "/img/pj1.svg",
+    serial: "PN0001265",
+    title: "Medical App (IOS native)",
+    date: "Sep 12,2020",
+    arrow: "/img/arrow-y.svg",
+    lvlClass: "text-yellow-500",
+    lvl: "Medium",
+    allTasks: "34",
+    activeTasks: "13",
+    assignes1: "/img/wl-ph5.png",
+    assignes2: "/img/wl-ph2.png",
+    assignes3: "/img/wl-ph8.png",
+    outherAssignes: "2",
+  },
+  {
+    img: "/img/pj2.svg",
+    serial: "PN0001221",
+    title: "Food Delivery Service",
+    date: "Sep 10,2020",
+    arrow: "/img/arrow-y.svg",
+    lvlClass: "text-yellow-500",
+    lvl: "Medium",
+    allTasks: "50",
+    activeTasks: "24",
+    assignes1: "/img/wl-ph5.png",
+    assignes2: "/img/wl-ph3.png",
+    assignes3: "/img/wl-ph2.png",
+    outherAssignes: "2",
+  },
+  {
+    img: "/img/pj3.svg",
+    serial: "PN0001290",
+    title: "Food Delivery Service",
+    date: "May 28,2020",
+    arrow: "/img/arrow-g.svg",
+    lvlClass: "text-green-500",
+    lvl: "Low",
+    allTasks: "23",
+    activeTasks: "20",
+    assignes1: "/img/wl-ph5.png",
+    assignes2: "/img/wl-ph2.png",
+    assignes3: "/img/wl-ph6.png",
+    outherAssignes: "2",
+  },
+];
+export const projectList = [
+  {
+    serial: "PN0001265",
+    title: "Medical App (IOS native)",
+  },
+  {
+    serial: "PN0001245",
+    title: "Food Delivery Service",
+  },
+  {
+    serial: "PN0001245",
+    title: "Fortune website",
+  },
+  {
+    serial: "PN0001245",
+    title: "Planner App",
+  },
+  {
+    serial: "PN0001245",
+    title: "Timer tracker - personal account",
+  },
+  {
+    serial: "PN0001245",
+    title: "Internal Project",
+  },
+];

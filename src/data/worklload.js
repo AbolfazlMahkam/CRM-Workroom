@@ -1,0 +1,58 @@
+export const worklloadCards = [
+  {
+    ring: "/img/ring1.svg",
+    img: "/img/wl-ph1.png",
+    name: "Shawn Stone",
+    job: "UI/UX Designer",
+    lvl: "Middle",
+  },
+  {
+    ring: "/img/ring2.svg",
+    img: "/img/wl-ph2.png",
+    name: "Randy Delgado",
+    job: "UI/UX Designer",
+    lvl: "Junior",
+  },
+  {
+    ring: "/img/ring3.svg",
+    img: "/img/wl-ph3.png",
+    name: "Emili Tyler",
+    job: "Copywriter",
+    lvl: "Middle",
+  },
+  {
+    ring: "/img/ring4.svg",
+    img: "/img/wl-ph4.png",
+    name: "Louis Castro",
+    job: "Copywriter",
+    lvl: "Senior",
+  },
+  {
+    ring: "/img/ring5.svg",
+    img: "/img/wl-ph5.png",
+    name: "Blake Silva",
+    job: "IOS Developer",
+    lvl: "Senior",
+  },
+  {
+    ring: "/img/ring6.svg",
+    img: "/img/wl-ph6.png",
+    name: "Joel Philips",
+    job: "UI/UX Designer",
+    lvl: "Middle",
+  },
+  {
+    ring: "/img/ring7.svg",
+    img: "/img/wl-ph7.png",
+    name: "Wayne Marsh",
+    job: "Copywriter",
+    lvl: "Junior",
+  },
+  {
+    ring: "/img/ring8.svg",
+    img: "/img/wl-ph8.png",
+    name: "Oscar HolloWay",
+    job: "UI/UX Designer",
+    lvl: "Middle",
+  },
+];
