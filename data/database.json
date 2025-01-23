@@ -1,0 +1,279 @@
+{
+    "menu": [
+        {
+            "title": "Dashboard",
+            "src": "/img/dashboard"
+        },
+        {
+            "title": "Project",
+            "src": "/img/projects"
+        },
+        {
+            "title": "Calender",
+            "src": "/img/calender"
+        },
+        {
+            "title": "Vacation",
+            "src": "/img/vacations"
+        },
+        {
+            "title": "Empeloyees",
+            "src": "/img/employees"
+        },
+        {
+            "title": "Messenger",
+            "src": "/img/messenger"
+        },
+        {
+            "title": "Info Portal",
+            "src": "/img/infoportal"
+        }
+    ],
+    "worklloadCards": [
+        {
+            "ring": "/img/ring1.svg",
+            "img": "/img/wl-ph1.png",
+            "name": "Shawn Stone",
+            "job": "UI/UX Designer",
+            "lvl": "Middle"
+        },
+        {
+            "ring": "/img/ring2.svg",
+            "img": "/img/wl-ph2.png",
+            "name": "Randy Delgado",
+            "job": "UI/UX Designer",
+            "lvl": "Junior"
+        },
+        {
+            "ring": "/img/ring3.svg",
+            "img": "/img/wl-ph3.png",
+            "name": "Emili Tyler",
+            "job": "Copywriter",
+            "lvl": "Middle"
+        },
+        {
+            "ring": "/img/ring4.svg",
+            "img": "/img/wl-ph4.png",
+            "name": "Louis Castro",
+            "job": "Copywriter",
+            "lvl": "Senior"
+        },
+        {
+            "ring": "/img/ring5.svg",
+            "img": "/img/wl-ph5.png",
+            "name": "Blake Silva",
+            "job": "IOS Developer",
+            "lvl": "Senior"
+        },
+        {
+            "ring": "/img/ring6.svg",
+            "img": "/img/wl-ph6.png",
+            "name": "Joel Philips",
+            "job": "UI/UX Designer",
+            "lvl": "Middle"
+        },
+        {
+            "ring": "/img/ring7.svg",
+            "img": "/img/wl-ph7.png",
+            "name": "Wayne Marsh",
+            "job": "Copywriter",
+            "lvl": "Junior"
+        },
+        {
+            "ring": "/img/ring8.svg",
+            "img": "/img/wl-ph8.png",
+            "name": "Oscar HolloWay",
+            "job": "UI/UX Designer",
+            "lvl": "Middle"
+        }
+    ],
+    "activityStream": [
+        {
+            "img": "/img/wl-ph8.png",
+            "name": "Oscar HolloWay",
+            "job": "UI/UX Designer",
+            "update": "Updated the status of Mind Map task to In Progress",
+            "link": "Attached file to the task"
+        },
+        {
+            "img": "/img/wl-ph3.png",
+            "name": "Emili Tyler",
+            "job": "Copywriter",
+            "update": "Updated the status of Mind Map task to In Progress",
+            "link": ""
+        }
+    ],
+    "dashboardProjects": [
+        {
+            "img": "/img/pj1.svg",
+            "serial": "PN0001265",
+            "title": "Medical App (IOS native)",
+            "date": "Sep 12,2020",
+            "arrow": "/img/arrow-y.svg",
+            "lvlClass": "text-yellow-500",
+            "lvl": "Medium",
+            "allTasks": "34",
+            "activeTasks": "13",
+            "assignes1": "/img/wl-ph5.png",
+            "assignes2": "/img/wl-ph2.png",
+            "assignes3": "/img/wl-ph8.png",
+            "outherAssignes": "2"
+        },
+        {
+            "img": "/img/pj2.svg",
+            "serial": "PN0001221",
+            "title": "Food Delivery Service",
+            "date": "Sep 10,2020",
+            "arrow": "/img/arrow-y.svg",
+            "lvlClass": "text-yellow-500",
+            "lvl": "Medium",
+            "allTasks": "50",
+            "activeTasks": "24",
+            "assignes1": "/img/wl-ph5.png",
+            "assignes2": "/img/wl-ph3.png",
+            "assignes3": "/img/wl-ph2.png",
+            "outherAssignes": "2"
+        },
+        {
+            "img": "/img/pj3.svg",
+            "serial": "PN0001290",
+            "title": "Food Delivery Service",
+            "date": "May 28,2020",
+            "arrow": "/img/arrow-g.svg",
+            "lvlClass": "text-green-500",
+            "lvl": "Low",
+            "allTasks": "23",
+            "activeTasks": "20",
+            "assignes1": "/img/wl-ph5.png",
+            "assignes2": "/img/wl-ph2.png",
+            "assignes3": "/img/wl-ph6.png",
+            "outherAssignes": "2"
+        }
+    ],
+    "projectList": [
+        {
+            "serial": "PN0001265",
+            "title": "Medical App (IOS native)"
+        },
+        {
+            "serial": "PN0001245",
+            "title": "Food Delivery Service"
+        },
+        {
+            "serial": "PN0001245",
+            "title": "Fortune website"
+        },
+        {
+            "serial": "PN0001245",
+            "title": "Planner App"
+        },
+        {
+            "serial": "PN0001245",
+            "title": "Timer tracker - personal account"
+        },
+        {
+            "serial": "PN0001245",
+            "title": "Internal Project"
+        }
+    ],
+    "nearestEvents": [
+        {
+            "border": "border-blue-500",
+            "icon": "/img/ne-b.svg",
+            "title": "Presentation of the new department",
+            "arrow": "/img/arrow-y.svg",
+            "day": "Today",
+            "hour": "6:00 PM",
+            "time": "4h"
+        },
+        {
+            "border": "border-fuchsia-400",
+            "icon": "/img/ne-pi.svg",
+            "title": "Anna's Birthday",
+            "arrow": "/img/arrow-g.svg",
+            "day": "Today",
+            "hour": "5:00 PM",
+            "time": "2h"
+        },
+        {
+            "border": "border-yellow-300",
+            "icon": "/img/ne-y.svg",
+            "title": "Meeting with Development Team",
+            "arrow": "/img/arrow-y.svg",
+            "day": "Tomorrow",
+            "hour": "5:00 PM",
+            "time": "4h"
+        },
+        {
+            "border": "border-fuchsia-400",
+            "icon": "/img/ne-pi.svg",
+            "title": "Ray's Birthday",
+            "arrow": "/img/arrow-g.svg",
+            "day": "Tomorrow",
+            "hour": "2:00 PM",
+            "time": "1h 30m"
+        },
+        {
+            "border": "border-blue-500",
+            "icon": "/img/ne-b.svg",
+            "title": "Meeting with CTO",
+            "arrow": "/img/arrow-y.svg",
+            "day": "Sep 30",
+            "hour": "12:00",
+            "time": "1h"
+        },
+        {
+            "border": "border-fuchsia-400",
+            "icon": "/img/ne-pi.svg",
+            "title": "Lucas's Birthday",
+            "arrow": "/img/arrow-g.svg",
+            "day": "Sep 29",
+            "hour": "5:30 PM",
+            "time": "2h"
+        },
+        {
+            "border": "border-purple-500",
+            "icon": "/img/ne-pe.svg",
+            "title": "Movie night (Tenet)",
+            "arrow": "/img/arrow-g.svg",
+            "day": "Sep 15",
+            "hour": "5:00 PM",
+            "time": "3h"
+        },
+        {
+            "border": "border-blue-500",
+            "icon": "/img/ne-b.svg",
+            "title": "Meeting with CEO",
+            "arrow": "/img/arrow-y.svg",
+            "day": "Sep 14",
+            "hour": "5:00 PM",
+            "time": "1h"
+        }
+    ],
+    "dashboardNE": [
+        {
+            "border": "border-blue-400",
+            "title": "Presentation of the new department",
+            "arrow": "/img/arrow-y.svg",
+            "day": "Today",
+            "hour": "5:00 PM",
+            "time": "4h"
+        },
+        {
+            "border": "border-pink-300",
+            "title": "Anna's Birthday",
+            "arrow": "/img/arrow-g.svg",
+            "day": "Today",
+            "hour": "6:00 PM",
+            "time": "4h"
+        },
+        {
+            "border": "border-pink-300",
+            "title": "Ray's Birthday",
+            "arrow": "/img/arrow-g.svg",
+            "day": "Tomorrow",
+            "hour": "2:00 PM",
+            "time": "4h"
+        }
+    ]
+}
