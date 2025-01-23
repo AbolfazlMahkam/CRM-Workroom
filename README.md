@@ -57,7 +57,7 @@ This project incorporates several essential npm packages to enhance functionalit
 
 To run the application locally, follow these steps:
 
-1. Clone the Repository: ```git clone ```
+1. Clone the Repository: ```git clone https://github.com/AbolfazlMahkam/CRM-Workroom.git``` or ```git clone git@github.com:AbolfazlMahkam/CRM-Workroom.git```.
 2. navigate to the CRM-Workroom project directory ```cd CRM-Workroom```.
 3. Run ```npm install``` to install all necessary node modules.
 4. Run ```npm update``` to ensure all node modules are up to date.
