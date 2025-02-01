@@ -71,7 +71,7 @@ git clone git@github.com:AbolfazlMahkam/CRM-Workroom.git
 4. navigate to the CRM-Workroom project directory ```cd CRM-Workroom```.
 5. Run `npm install` to install all necessary node modules.
 6. Run `npm update` to ensure all node modules are up to date.
-7. Start the JSON-Server by running `npx json-server --watch ./data/database.json`. The server will listen on port 9500.
+7. Start the JSON-Server by running `npx json-server --watch ./data/database.json`. The server will listen on port 3000.
 8. Start the Development Server by running `npm run dev`. The server will listen on port 5173.
 9. Open your preferred browser and go to `127.0.0.1:5173` or `localhost:5173` to access the application.
 
